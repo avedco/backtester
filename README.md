@@ -60,8 +60,8 @@ Tests live in `tests/test_engine.py`. Run with `python -m pytest -v`.
 
 | Engine | Mean gross Sharpe (5 seeds) |
 |---|---|
-| Honest | **FILL IN** (about 0) |
-| With the leak | **FILL IN** (well above 1) |
+| Honest | -0.12 |
+| With the leak | 1.64 |
 
 The random-walk test catches this leak. The truncation tests do not, because the leak only reaches into the same trading window, which both truncated and full runs contain. I took from this that each test catches a different class of bug, which is why the suite has several.
 
